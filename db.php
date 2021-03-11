@@ -1,3 +1,4 @@
+
 <?php
     define("hostname","localhost");
     define("user","Golf");
@@ -8,8 +9,15 @@
 
 <?php
 
-    $conn=new mysqli(hostname,user,password,dbname);
-    if(!$conn) die ("ติดต่อฐานข้อมูลไม่ได้".$conn-> connection);
-    else echo"DB connected";
-    
+$conn=new mysqli(hostname,user,password,dbname);
+/*
+if(!$conn) die ("ติดต่อฐานข้อมูลไม่ได้".$conn-> connection);
+else echo"DB connected";
+*/
+$sql="SELECT * FROM book";
+
+// Change character set to utf8
+$conn->set_charset("utf8");
+
+$result = $conn->query($sql);
 ?>
