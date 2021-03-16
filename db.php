@@ -19,5 +19,7 @@ $sql="SELECT * FROM book";
 // Change character set to utf8
 $conn->set_charset("utf8");
 
+
 $result = $conn->query($sql);
+
 ?>
