@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
+<form method="POST" action="<?php $_SERVER['PHP_SELF'];?>" >
 customerID :
 <input type="text" id="customerID" name="cusid"><br>
 customerName :
@@ -20,7 +20,7 @@ customerAddress :
 <input type="text" id="custadd" name="cusadd"><br>
 customerPhonenumber :
 <input type="text" id="custphone" name="cusphone"><br>
-
+<input type="submit" value="Insert database♥" onclick="<?phpinserts()?>" >
 </form>
 
 <?php
@@ -35,7 +35,7 @@ function inserts(){
 
 ?>
 <?php
-   
+   inserts();
 ?>
 <form action="testweb.php" >
 <input type="submit" value="Insert database♥" onclick="<?phpinserts()?>" >
