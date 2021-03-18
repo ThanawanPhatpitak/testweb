@@ -20,7 +20,7 @@ customerAddress :
 <input type="text" id="custadd" name="cusadd"><br>
 customerPhonenumber :
 <input type="text" id="custphone" name="cusphone"><br>
-<input type="submit" value="Insert database♥" onclick="<?phpinserts()?>" >
+<!--  จะใช้แบบนี้หรือแบบ ข้างล่างก็ได้ <input type="submit" value="Insert database♥" onclick="<?php// inserts() ?>" > -->
 </form>
 
 <?php
@@ -35,10 +35,10 @@ function inserts(){
 
 ?>
 <?php
-   inserts();
+   
 ?>
 <form action="testweb.php" >
-<input type="submit" value="Insert database♥" onclick="<?phpinserts()?>" >
+<input type="submit" value="Insert database♥" onclick="<?php inserts() ?>" >
 
 </form> 
 </body>
